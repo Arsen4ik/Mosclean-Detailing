@@ -1,3 +1,5 @@
+// import logo from './assets/main-logo-picture.svg'
+
 document.querySelector('#app').innerHTML = `
 <div class="side-bar">
 <img class="close-side-bar" src="./assets/close-svgrepo-com.svg" alt="">
@@ -296,7 +298,7 @@ cards.forEach(el => {
     }
     if (!el.sign) {
       el.sign = 1
-      srcImgArr[srcImgArr.length - 6] = el.sign
+      srcImgArr[srcImgArr.length - 5] = el.sign
       el.style.transform = "rotateY(180deg)"
       setTimeout(() => {
         el.firstChild.nextSibling.src = srcImgArr.join('')
@@ -305,7 +307,7 @@ cards.forEach(el => {
       }, 250)
     } else {
       el.sign = 0
-      srcImgArr[srcImgArr.length - 6] = el.sign
+      srcImgArr[srcImgArr.length - 5] = el.sign
       el.style.transform = "rotateY(0deg)"
       setTimeout(() => {
         el.firstChild.nextSibling.src = srcImgArr.join('')
